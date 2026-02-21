@@ -101,11 +101,6 @@ curl -X POST http://localhost:5000/api/search-url \
   -d '{"url": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"}'
 ```
 
-## Deployment
-
-- **Backend** → [Render](https://render.com) (see `backend/render.yaml`)
-- **Frontend** → [Vercel](https://vercel.com) (see `frontend/vercel.json`)
-
 ## Approach (200 words)
 
 This project implements a **visual product search engine** using OpenAI's CLIP model for semantic image understanding. CLIP maps images into a shared 512-dimensional embedding space where visually similar items cluster together. By pre-computing embeddings for all catalog products at build time and storing them alongside product metadata, we achieve zero ML compute for the catalog and sub-second search at query time.
