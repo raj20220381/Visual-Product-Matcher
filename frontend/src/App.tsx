@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import Header from "./components/Header";
 import ImageUpload from "./components/ImageUpload";
 import ProductCard from "./components/ProductCard";
